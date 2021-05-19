@@ -20,7 +20,7 @@ const Row = styled.div`
   margin-bottom: 5px; 
   border: 3px solid green;
 `
-//margin-bottom was 8 font 14 border added
+// margin-bottom was 8 font 14 border added
 
 
 const CakeStats = () => {

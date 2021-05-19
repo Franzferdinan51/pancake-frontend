@@ -16,16 +16,16 @@ import history from './routerHistory'
 // Route-based code splitting
 // Only pool is included in the main bundle because of it's the most visited page
 const Home = lazy(() => import('./views/Home'))
-const Farms = lazy(() => import('./views/Farms'))
-const Lottery = lazy(() => import('./views/Lottery'))
-const Ifos = lazy(() => import('./views/Ifos'))
+// const Farms = lazy(() => import('./views/Farms'))
+// const Lottery = lazy(() => import('./views/Lottery'))
+// const Ifos = lazy(() => import('./views/Ifos'))
 const NotFound = lazy(() => import('./views/NotFound'))
-const Collectibles = lazy(() => import('./views/Collectibles'))
+// const Collectibles = lazy(() => import('./views/Collectibles'))
 const Teams = lazy(() => import('./views/Teams'))
 const Team = lazy(() => import('./views/Teams/Team'))
 const Profile = lazy(() => import('./views/Profile'))
-const TradingCompetition = lazy(() => import('./views/TradingCompetition'))
-const Predictions = lazy(() => import('./views/Predictions'))
+// const TradingCompetition = lazy(() => import('./views/TradingCompetition'))
+// const Predictions = lazy(() => import('./views/Predictions'))
 
 // This config is required for number formatting
 BigNumber.config({
@@ -49,21 +49,21 @@ const App: React.FC = () => {
             <Route path="/" exact>
               <Home />
             </Route>
-            <Route path="/farms">
-              <Farms />
-            </Route>
+            {/* <Route path="/farms"> 
+              <Farms /> 
+  </Route> */ }
             <Route path="/pools">
               <Pools />
             </Route>
-            <Route path="/lottery">
+            {/* <Route path="/lottery">
               <Lottery />
-            </Route>
+</Route> 
             <Route path="/ifo">
               <Ifos />
             </Route>
             <Route path="/collectibles">
               <Collectibles />
-            </Route>
+</Route> */ }
             <Route exact path="/teams">
               <Teams />
             </Route>
@@ -73,22 +73,22 @@ const App: React.FC = () => {
             <Route path="/profile">
               <Profile />
             </Route>
-            <Route path="/competition">
+            {/* <Route path="/competition">
               <TradingCompetition />
             </Route>
             <Route path="/prediction">
               <Predictions />
             </Route>
-            {/* Redirect */}
+            {/* Redirect */ }
             <Route path="/staking">
               <Redirect to="/pools" />
             </Route>
             <Route path="/syrup">
               <Redirect to="/pools" />
             </Route>
-            <Route path="/nft">
+            {/* <Route path="/nft">
               <Redirect to="/collectibles" />
-            </Route>
+            </Route> */ }
             {/* 404 */}
             <Route component={NotFound} />
           </Switch>

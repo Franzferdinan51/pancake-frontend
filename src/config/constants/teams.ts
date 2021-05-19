@@ -13,7 +13,7 @@ const teams: Team[] = [
       ipfs: 'https://gateway.pinata.cloud/ipfs/QmXKzSojwzYjtDCVgR6mVx7w7DbyYpS7zip4ovJB9fQdMG/syrup-storm.png',
     },
     background: 'syrup-storm-bg.svg',
-    textColor: '#191326',
+    textColor: '#1913',
     users: 0,
     points: 0,
   },

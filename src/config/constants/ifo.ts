@@ -1,4 +1,4 @@
-import tokens from './tokens'
+// import tokens from './tokens'
 import farms from './farms'
 import { Ifo, Token } from './types'
 
