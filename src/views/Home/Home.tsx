@@ -82,15 +82,15 @@ const Home: React.FC = () => {
   return (
     <Page>
       <Hero>
-        <Heading as="h1" scale="xl" mb="24px" color="secondary">
-          {t('PancakeSwap')}
+        <Heading as="h1" scale="xl" mb="20px" color="secondary">
+          {t('PrimoSwap')}
         </Heading>
-        <Text>{t('The #1 AMM and yield farm on Binance Smart Chain.')}</Text>
+        <Text>{t('why be an AMM and yield farm on Binance Smart Chain.')}</Text>
       </Hero>
       <div>
         <Cards>
           <FarmStakingCard />
-          <LotteryCard />
+         {/* <LotteryCard /> */ }
         </Cards>
         <CTACards>
           <EarnAPRCard />

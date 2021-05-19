@@ -7,7 +7,7 @@ import { useTranslation } from 'contexts/Localization'
 import { getCakeAddress } from 'utils/addressHelpers'
 import CardValue from './CardValue'
 
-const StyledCakeStats = styled(Card)`
+const StyledPrimoStats = styled(Card)`
   margin-left: auto;
   margin-right: auto;
 `
@@ -15,10 +15,13 @@ const StyledCakeStats = styled(Card)`
 const Row = styled.div`
   align-items: center;
   display: flex;
-  font-size: 14px;
+  font-size: 12px;
   justify-content: space-between;
-  margin-bottom: 8px;
+  margin-bottom: 5px; 
+  border: 3px solid green;
 `
+//margin-bottom was 8 font 14 border added
+
 
 const CakeStats = () => {
   const { t } = useTranslation()
@@ -27,25 +30,25 @@ const CakeStats = () => {
   const cakeSupply = totalSupply ? getBalanceNumber(totalSupply) - burnedBalance : 0
 
   return (
-    <StyledCakeStats>
+    <StyledPrimoStats>
       <CardBody>
-        <Heading scale="xl" mb="24px">
-          {t('Cake Stats')}
+        <Heading scale="xl" mb="26px">
+          {t('Primo Stats')}
         </Heading>
         <Row>
-          <Text fontSize="14px">{t('Total CAKE Supply')}</Text>
+          <Text fontSize="15px">{t('Total Primo Supply')}</Text>
           {cakeSupply && <CardValue fontSize="14px" value={cakeSupply} />}
         </Row>
         <Row>
-          <Text fontSize="14px">{t('Total CAKE Burned')}</Text>
-          <CardValue fontSize="14px" decimals={0} value={burnedBalance} />
+          <Text fontSize="15px">{t('Total Primo Burned')}</Text>
+          <CardValue fontSize="15px" decimals={0} value={burnedBalance} />
         </Row>
         <Row>
-          <Text fontSize="14px">{t('New CAKE/block')}</Text>
-          <CardValue fontSize="14px" decimals={0} value={20} />
+          <Text fontSize="15px">{t('New Primo/block')}</Text>
+          <CardValue fontSize="15px" decimals={0} value={20} />
         </Row>
       </CardBody>
-    </StyledCakeStats>
+    </StyledPrimoStats>
   )
 }
 
