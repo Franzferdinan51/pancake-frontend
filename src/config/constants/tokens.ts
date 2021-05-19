@@ -12,7 +12,7 @@ const tokens = {
     decimals: 18,
     projectLink: 'https://pancakeswap.finance/',
   },
-  
+
   bunny: {
     symbol: 'BUNNY',
     address: {
@@ -22,7 +22,7 @@ const tokens = {
     decimals: 18,
     projectLink: 'https://pancakebunny.finance/',
   },
-  
+
   tpt: {
     symbol: 'TPT',
     address: {
@@ -31,10 +31,6 @@ const tokens = {
     },
     decimals: 4,
     projectLink: 'https://www.tokenpocket.pro/',
-  },
- 
-    decimals: 18,
-    projectLink: 'https://multiplier.finance/',
   },
   ust: {
     symbol: 'UST',
@@ -45,7 +41,7 @@ const tokens = {
     decimals: 18,
     projectLink: 'https://mirror.finance/',
   },
- 
+
   btcst: {
     symbol: 'BTCST',
     address: {
@@ -55,7 +51,7 @@ const tokens = {
     decimals: 17,
     projectLink: 'https://www.1-b.tc/',
   },
- 
+
   wbnb: {
     symbol: 'wBNB',
     address: {
@@ -80,8 +76,8 @@ const tokens = {
       56: '0x4b0f1812e5df2a09796481ff14017e6005508003',
       97: '',
     },
-   
-  
+  },
+
   syrup: {
     symbol: 'SYRUP',
     address: {
@@ -90,7 +86,8 @@ const tokens = {
     },
     decimals: 18,
     projectLink: 'https://pancakeswap.finance/',
-  
+  },
+
   busd: {
     symbol: 'BUSD',
     address: {
@@ -181,7 +178,7 @@ const tokens = {
     decimals: 18,
     projectLink: 'http://www.makerdao.com/',
   },
-  
+
   usdt: {
     symbol: 'USDT',
     address: {
@@ -200,7 +197,7 @@ const tokens = {
     decimals: 18,
     projectLink: 'https://bitcoin.org/',
   },
-  
+
   fil: {
     symbol: 'FIL',
     address: {
@@ -219,8 +216,8 @@ const tokens = {
     decimals: 18,
     projectLink: 'https://www.bakeryswap.org/',
   },
-  
-  
+
+
   τbtc: {
     symbol: 'τBTC',
     address: {
@@ -230,7 +227,7 @@ const tokens = {
     decimals: 9,
     projectLink: 'https://www.btcst.finance/',
   },
-  
+
   btt: {
     symbol: 'BTT',
     address: {
@@ -258,7 +255,7 @@ const tokens = {
     decimals: 18,
     projectLink: 'https://winklink.org/',
   },
-  
+
   doge: {
     symbol: 'DOGE',
     address: {
@@ -268,7 +265,7 @@ const tokens = {
     decimals: 8,
     projectLink: 'https://dogecoin.com/',
   },
-  
+
   τdoge: {
     symbol: 'τDOGE',
     address: {
@@ -278,7 +275,7 @@ const tokens = {
     decimals: 8,
     projectLink: 'https://www.btcst.finance/',
   },
- 
-},
 
-export default tokens;
+}
+
+export default tokens
