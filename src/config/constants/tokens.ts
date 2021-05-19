@@ -279,6 +279,6 @@ const tokens = {
     projectLink: 'https://www.btcst.finance/',
   },
  
-}
+},
 
-export default tokens
+export default tokens;
